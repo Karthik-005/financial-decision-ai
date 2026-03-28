@@ -4,4 +4,15 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "jupyter-core>=5.9.1",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.1",
+    "langchain-huggingface>=1.2.1",
+    "notebook>=7.5.5",
+    "pandas>=3.0.1",
+    "pathlib>=1.0.1",
+    "requests>=2.33.0",
+    "streamlit>=1.19.0",
+    "tqdm>=4.67.3",
+]
