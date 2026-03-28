@@ -709,6 +709,7 @@ name = "financial-assistant-ai"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "chromadb" },
     { name = "jupyter-core" },
     { name = "langchain-chroma" },
     { name = "langchain-community" },
@@ -723,6 +724,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "chromadb", specifier = ">=1.5.5" },
     { name = "jupyter-core", specifier = ">=5.9.1" },
     { name = "langchain-chroma", specifier = ">=1.1.0" },
     { name = "langchain-community", specifier = ">=0.4.1" },
