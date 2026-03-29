@@ -1,0 +1,13 @@
+data:
+  raw_data_path: data/raw/income_tax_2025.pdf
+  vector_db:
+    path: data/vector_db/
+    collection_name: income_tax
+    docs_batch_size: 10
+  chunks:
+    chunk_size: 500
+    overlap: 100
+
+
+huggingface:
+  embedding_model: BAAI/bge-base-en-v1.5  
