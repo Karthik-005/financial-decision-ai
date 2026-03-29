@@ -13,6 +13,7 @@ dependencies = [
     "notebook>=7.5.5",
     "pandas>=3.0.1",
     "pathlib>=1.0.1",
+    "pdfplumber>=0.11.9",
     "requests>=2.33.0",
     "streamlit>=1.19.0",
     "tqdm>=4.67.3",
