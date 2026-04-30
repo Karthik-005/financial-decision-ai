@@ -6,6 +6,7 @@ dist/
 wheels/
 *.egg-info
 .ipynb_checkpoints
+.python-version
 
 # Virtual environments
 .venv
@@ -14,4 +15,4 @@ wheels/
 .env
 
 # Data
-data/vector_db/
+data/
