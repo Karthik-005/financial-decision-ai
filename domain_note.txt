@@ -1,0 +1,35 @@
+Domain Note: Financial Decision Assistant (RAG-based)
+Project Title: Navigating the Fine Print: A RAG-Driven Assistant for Banking Compliance and Decision Support
+Domain: Indian Finance (Domain D)  
+
+1. The Real Problem: The "Complexity Gap"
+The primary problem is the massive information asymmetry between financial institutions and retail customers. Banking documents—such as loan agreements, investment prospectuses, and regulatory circulars—are dense, filled with technical jargon, and often span dozens of pages.  
+
+Information Overload: Customers often overlook critical clauses regarding "hidden" charges, fluctuating interest rates, or lock-in periods simply because the volume of text is overwhelming.  
+
+Regulatory Complexity: Rules and regulations (like SEBI or RBI guidelines) change frequently. A user might apply for a loan without realizing there is a new bank scheme or government subsidy that specifically benefits their demographic.  
+
+2. Who It Affects
+This problem affects retail banking customers, particularly:
+
+First-time investors who may not understand the risk-disclosure documents associated with market-linked products.  
+
+Loan applicants (e.g., home or education loans) who need to compare multiple bank schemes and understand the long-term legal implications of the contracts they are signing.  
+
+Senior citizens who are often targets for mis-selling of financial products due to the complexity of the associated paperwork.  
+
+3. Why Existing Solutions Fall Short
+Generic LLMs: While tools like ChatGPT are good at summarizing, they lack "groundedness." Without RAG, they frequently hallucinate or provide outdated financial advice that doesn't reflect the specific document the user is holding.  
+
+Keyword Search (Ctrl+F): This requires the user to already know what they are looking for. It cannot connect a "Regulation 42b" mentioned on page 2 to a "Fee Schedule" listed on page 50.  
+
+Manual Advice: Relationship managers may have biases or sales targets, leading to advice that prioritizes bank profit over customer benefit.  
+
+4. Justification of the RAG Approach
+Our approach uses Retrieval-Augmented Generation (RAG) to bridge this gap.  
+
+Contextual Chunking: By fetching and chunking specific bank documents, the system ensures that every "advice" or "summary" is directly linked to a verifiable source within the document.  
+
+Groundedness: This minimizes hallucinations, which is critical in finance where a single wrong percentage point can lead to significant loss.  
+
+Research Gap: Most current financial bots focus on "Market Trends" or "Stock Prices". There is a lack of specialized tools that perform document-specific legal and regulatory compliance checks for the average user.
