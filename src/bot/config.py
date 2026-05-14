@@ -8,11 +8,10 @@ class Settings():
 		ROOT_DIR = Path(__file__).resolve().parents[2]
 		
 		# Load environmental variables
-		try:
-			load_dotenv()
+		if load_dotenv():
 			self.HF_TOKEN = os.getenv('HF_TOKEN')
 			
-		except Exception as e:
+		else:
 			print(f"Couldn't load .env file. \nError: {e}")
 		
 		
@@ -28,6 +27,7 @@ class Settings():
 		self.OVERLAP = config['data']['chunks']['overlap']
 		self.EMBEDDING_MODEL = config['huggingface']['embedding_model']
 		self.LLM = config['huggingface']['llm']
+		self.top_k = 5
 		
 settings = Settings()
 		
