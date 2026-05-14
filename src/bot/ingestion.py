@@ -7,7 +7,8 @@ from typing import List
 from tqdm.auto import tqdm
 
 # Extract text, create chunks and return a list of documents. 
-def ingest(pdf_path: str) -> List[Document]:
+def ingest() -> List[Document]:
+	pdf_path = settings.RAW_DATA_PATH
 	chunk_size = settings.CHUNK_SIZE
 	overlap = settings.OVERLAP
 	documents = []
