@@ -15,4 +15,4 @@ wheels/
 .env
 
 # Data
-data/
+data/vector_db
