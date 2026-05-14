@@ -9,7 +9,7 @@ from pathlib import Path
 import time
 from tqdm.auto import tqdm
 
-def initiate_vector_db(docs: List[Document]) -> Chroma:
+def initiate_vector_db() -> Chroma:
 	
 	# Fetch huggingface and vector_db configs.
 	vector_db_path = settings.VECTOR_DB['path']
@@ -30,8 +30,9 @@ def initiate_vector_db(docs: List[Document]) -> Chroma:
 					   collection_name=collection_name)
 	
 	# If the directory has already been created, check if it has the documents loaded. If not, load them batch-wise.
-	n_docs = len(docs)
 	if vector_db._collection.count() == 0:
+		docs = ingest()
+		n_docs = len(docs)
 		for start in tqdm(range(0, n_docs, docs_batch_size), desc="Adding documents batch-wise into the vector_db"):
 			
 			end = min(start+docs_batch_size, n_docs)
