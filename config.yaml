@@ -11,4 +11,4 @@ data:
 
 huggingface:
   embedding_model: BAAI/bge-base-en-v1.5 
-  llm: Qwen/Qwen2.5-3B-Instruct 
+  llm: google/gemma-4-31B-it
